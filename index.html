@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Encoder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Text to Code Encoder</h1>
+        
+        <div class="input-section">
+            <label for="textInput">Enter your message:</label>
+            <textarea id="textInput" placeholder="Type your message here..."></textarea>
+        </div>
+
+        <div class="controls">
+            <label for="encodingType">Choose encoding format:</label>
+            <select id="encodingType">
+                <option value="binary">Binary</option>
+                <option value="octal">Octal</option>
+                <option value="decimal">Decimal</option>
+                <option value="hex">Hexadecimal</option>
+            </select>
+            <button onclick="encodeText()">Encode Message</button>
+        </div>
+
+        <div class="output-section">
+            <label for="outputText">Encoded result:</label>
+            <textarea id="outputText" readonly></textarea>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
